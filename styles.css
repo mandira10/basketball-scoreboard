@@ -1,0 +1,80 @@
+@font-face {
+    font-family: LCD;
+    src: url(CursedTimerUlil-Aznm.ttf);
+  }
+  
+:root{
+    --darkcolor: #1c2648;
+    --lightcolor: #9cadd6;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--darkcolor);
+    color: #EEEEEE;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 28px;
+    align-items: center;
+}
+.team{
+    width: 300px;
+
+}
+.teamname{
+    margin: 0; /*without this huge margin top and bottom driven by font size*/
+    text-align: center;
+
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+     color: #EEEEEE;
+}
+.teamscore{
+    font-family: LCD, Geneva, Tahoma, sans-serif;
+    background: #080001;
+    width: 170px; /*this is big enough for 3 digits*/
+    border-radius: 5px;
+    text-align: center;
+    font-size: 90px;
+    line-height: 126px;
+    margin: 40px auto; /* without this I had a huge 90px margin on top and bottom, driven by font size
+    controls space between the black box and team name*/
+    padding: 20px 10px 10px 10px; /*creates space between digits and black box edges*/
+    color: #F94F6D;
+}
+.team-addpoints{
+    text-align: center;
+}
+.points-btn{
+    background: var(--darkcolor);
+    margin: 0 10px; /*adds the horizontal space between the buttons*/
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid var(--lightcolor);
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-family: LCD, Geneva, Tahoma, sans-serif;
+    color: var(--lightcolor);
+}
+
+#newgame{
+    display: block;
+    color: var(--darkcolor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 5px;
+    background: var(--lightcolor);
+    border: 2px solid white;
+    padding: 9px 19px;
+    margin: 50px auto 20px auto;
+}
